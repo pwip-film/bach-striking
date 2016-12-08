@@ -2884,8 +2884,9 @@ main {
 
 .gform_body .ginput_container span {
   float: left;
-  width: 45%;
-  margin-left: 5%; }
+  width: 45% !important;
+  margin-left: 5%;
+  padding: 0 !important; }
   .gform_body .ginput_container span:first-child {
     margin-left: 0;
     margin-right: 5%; }
@@ -2901,6 +2902,13 @@ main {
 .gform_body .ginput_container label {
   font-size: 10px;
   padding: 10px 0; }
+
+.gform_body .ginput_container textarea {
+  width: 100%;
+  border: 1px solid #d59f0f;
+  padding: 10px;
+  color: #999;
+  font-size: 12px; }
 
 .gform_button {
   width: 100%;

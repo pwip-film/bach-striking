@@ -21,7 +21,7 @@
 		<section class="films-form">
 			<div class="films-form__wrapper">
 				<div class="films-form__content-wrapper">
-					<form method="post" enctype="multipart/form-data" id="gform_1" action="/see-the-film/">
+<!-- 					<form method="post" enctype="multipart/form-data" id="gform_1" action="/see-the-film/">
             	        <div class="gform_body"><ul id="gform_fields_1" class="gform_fields top_label form_sublabel_below description_below"><li id="field_1_1" class="gfield gfield_contains_required field_sublabel_below field_description_below"><label class="gfield_label" for="input_1_1_3">Name<span class="gfield_required">*</span></label><div class="ginput_complex ginput_container no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name" id="input_1_1">
                             
                             <span id="input_1_1_3_container" class="name_first">
@@ -57,7 +57,10 @@
 				            <input type="hidden" name="gform_field_values" value="">
 				            
 				        </div>
-                    </form>
+                    </form> -->
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>                    
+						<?php the_content(); ?>                    
+					<?php endwhile; endif; ?>	                    
 				</div>				
 				<div class="films-form__image-wrapper">
 					<img class="films-form__image" src="http://uw8qk1h10vx1n1kk6420h9xs.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/contactpage.jpg">

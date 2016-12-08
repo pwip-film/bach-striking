@@ -128,7 +128,7 @@ function html5blank_styles()
     // wp_register_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '4.5.2' );
     // wp_enqueue_style('font-awesome');
 
-    wp_register_style('striking-styles', get_template_directory_uri() . '/style.css', array(), '1.3', 'all');
+    wp_register_style('striking-styles', get_template_directory_uri() . '/style.css', array(), '1.4', 'all');
     wp_enqueue_style('striking-styles'); // Enqueue it!
 }
 
