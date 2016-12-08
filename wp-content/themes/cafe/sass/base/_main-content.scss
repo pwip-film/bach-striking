@@ -297,6 +297,13 @@
 			opacity: .7;
 			padding: 10px 0;				
 		}
+		textarea {
+			width: 100%;
+			border: 1px solid $secondary-color;
+			padding: 10px;
+			color: #999;
+			font-size: 12px;			
+		}
 	}
 }
 .gform_button {

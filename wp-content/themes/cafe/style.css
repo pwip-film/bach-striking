@@ -2921,6 +2921,13 @@ main {
   opacity: .7;
   padding: 10px 0; }
 
+.gform_body .ginput_container textarea {
+  width: 100%;
+  border: 1px solid #ffbc00;
+  padding: 10px;
+  color: #999;
+  font-size: 12px; }
+
 .gform_button {
   width: 100%;
   padding: 20px;
