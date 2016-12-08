@@ -3,6 +3,9 @@
 	height: 500px;
 	position: relative;
 	@include cover-background('/wp-content/themes/soldier/img/striking-a-chord-cover.jpg', 'bottom', 'center', 'fixed');
+	@media screen and (max-width: $break-tablet) {
+			height: 340px;
+	}	
 	&__quote-wrapper {
 		width: 60%;
 		margin: 0 auto;
@@ -10,6 +13,9 @@
 		position: relative;
 		top: 50px;
 		padding: 150px 0;
+		@media screen and (max-width: $break-tablet) {
+			padding: 100px 0;
+		}		
 	}
 	&__play-button {
 		display:block;
@@ -161,6 +167,9 @@
 		width: 60%;
 		padding: 20px 0 30px;
 		margin: 0 auto;
+		@media screen and (max-width: $break-tablet) {
+			width: 90%;	
+		}		
 	}
 	&__text {
 		font-size: 26px;
@@ -173,7 +182,10 @@
 		@include transitions(all, 1s, ease-out);
 		&--visible {
 			opacity: 1;
-		}				
+		}	
+		@media screen and (max-width: $break-tablet) {
+			font-size: 16px;
+		}			
 	}
 	&__image {
 		max-width: 120%;
@@ -199,12 +211,18 @@
 		width: 60%;
 		padding: 150px 0;
 		margin: 0 auto;		
+		@media screen and (max-width: $break-tablet) {
+			width: 90%;	
+		}		
 	}
 	&__text {
 		color: #FFF;
 		font-weight: bold;
 		font-size: 26px;
 		line-height: 42px;		
+		@media screen and (max-width: $break-tablet) {
+			font-size: 16px;
+		}		
 	}
 	&__citation {
 		float: right;

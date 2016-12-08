@@ -34,30 +34,30 @@
 		</section>
 		<section class="about-artwork">
 			<div class="about-artwork__wrapper">
+				<div class="about-artwork__info">
+					<a class="" href="http://coffee-art.com/" target="_blank">
+						<img class="about-artwork__image" src="http://uw8qk1h10vx1n1kk6420h9xs.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/WAFF_logo_25-1.png">
+					</a>
+				</div>
 				<div class="about-artwork__credit">
 					<h3 class="about-artwork__title">We Are Family Foundation</h3>
 					<p class="about-artwork__credit-detail">
 						Striking a Chord was produced in partnership with the We Are Family Foundation (WAFF), a not-for-profit organization dedicated to the vision of a global family by creating and supporting programs that inspire and educate the next generation about respect, understanding, and cultural diversity—while striving to solve some of our biggest global problems at the same time. This film will add to their vision by expanding our public understanding of the larger community of our troops in Iraq and the role of music as a force for peace. Find out more at wearefamilyfoundation.org.
 					</p>
 				</div>
-				<div class="about-artwork__info">
-					<a class="" href="http://coffee-art.com/" target="_blank">
-						<img class="about-artwork__image" src="http://uw8qk1h10vx1n1kk6420h9xs.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/WAFF_logo_25-1.png">
-					</a>
-				</div>
 			</div>
 
 			<div class="about-artwork__wrapper">
+				<div class="about-artwork__info">
+					<a class="" href="http://coffee-art.com/" target="_blank">
+						<img class="about-artwork__image" src="http://uw8qk1h10vx1n1kk6420h9xs.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/nell.jpg">
+					</a>
+				</div>
 				<div class="about-artwork__credit">
 					<h3 class="about-artwork__title">Nell Bryden</h3>
 					<p class="about-artwork__credit-detail">
 						Nell Bryden is a singer/songwriter with six CDs under her belt. Born and raised in New York City, and currently living in London, Bryden has blended blues, country, modern-Dixie and jazz into a songwriting style uniquely her own. Constantly crossing the oceans, she’s played nearly 500 gigs in just over two years, including opening slots with KT Tunstall and the Counting Crows. Nell’s especially popular in the British Isles. As an independent release, her debut single tracked Top 40 in the Official Irish Charts. Find out more at nellbryden.com.
 					</p>
-				</div>
-				<div class="about-artwork__info">
-					<a class="" href="http://coffee-art.com/" target="_blank">
-						<img class="about-artwork__image" src="http://uw8qk1h10vx1n1kk6420h9xs.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/nell.jpg">
-					</a>
 				</div>
 			</div>			
 
