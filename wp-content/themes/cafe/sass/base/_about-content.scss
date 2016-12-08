@@ -24,11 +24,21 @@
 				opacity: 1;
 			}
 		}
+		@media screen and (max-width: $break-tablet) {
+			font-size: 18px;
+			padding: 40px 0;
+		}				
 	}
+	@media screen and (max-width: $break-tablet) {
+		height: 200px;
+	}			
 }
 .about-hero {
 		height: 400px;
 		@include cover-background('http://bachstarcafe.com/wp-content/uploads/sites/2/2016/03/stanza_aboutpage.jpg', 'center', 'center', 'fixed');
+		@media screen and (max-width: $break-tablet) {
+			height: 200px;
+		}				
 		// @include cover-background('/wp-content/themes/cafe/img/about_background.jpg', 'center', 'center', 'fixed');
 }
 .about-description {
@@ -49,28 +59,47 @@
 			position: absolute;
 			left: 0;
 			top: -200px;
-		}		
+		}	
+		@media screen and (max-width: $break-tablet) {
+			height: auto;
+		}					
 		&__wrapper {
 			width: 70%;
 			margin: 0 auto;
 			padding: 20px 0;
 			@include clearfix;
+			@media screen and (max-width: $break-tablet) {
+				width: 90%;
+			}					
 		}		
 		&__text-wrapper {
 			width: 70%;
 			margin: 0 5% 0 0;
 			float: left;
+			@media screen and (max-width: $break-tablet) {
+				width: 100%;
+				float: none;
+				margin: 0;
+			}					
 		}
 		&__text {
 			color: $tertiary-color;
 			padding: 50px 0 0;
 			font-size: 21px;
 			line-height: 32px;
-			margin: 0;			
+			margin: 0;	
+			@media screen and (max-width: $break-tablet) {
+				padding: 0 0 50px;
+			}							
 		}
 		&__image-wrapper {
 			width: 25%;
 			float: left;
+			@media screen and (max-width: $break-tablet) {
+				width: 100%;
+				float: none;
+				text-align: center;
+			}					
 		}
 		&__image {
 			max-width: 70%;
@@ -93,11 +122,20 @@
 		margin: 0 auto;
 		padding: 50px 0;
 		@include clearfix;
+		@media screen and (max-width: $break-tablet) {
+			width: 90%;
+			padding: 20px 0;
+		}				
 	}
 	&__image-wrapper {
 		width: 30%;
 		margin: 0 5% 0 0;
 		float: left;
+		@media screen and (max-width: $break-tablet) {
+			width: 100%;
+			margin: 0;
+			float: none;
+		}				
 	}
 	&__image {
 		max-width: 100%;
@@ -105,6 +143,11 @@
 	&__content-wrapper {
 		width: 65%;
 		float: left;
+		@media screen and (max-width: $break-tablet) {
+			width: 100%;
+			float: none;
+			margin: 30px auto;
+		}				
 	}
 	&__content-title {
 		margin-bottom: 10px;
@@ -131,8 +174,14 @@
 	color: #FFF;
 	background: $primary-color;
 	// @include cover-background('http://bachstarcafe.com/wp-content/uploads/sites/2/2016/03/stanza_aboutpage.jpg', 'center', 'center', 'fixed');		
+	@media screen and (max-width: $break-tablet) {
+		height: auto;
+	}			
 	&__title {
 		font-size: 42px;
+		@media screen and (max-width: $break-tablet) {
+			font-size: 28px;
+		}				
 	}
 	&__sub-title {
 		margin: 20px 0 0;
@@ -146,6 +195,11 @@
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
+		@media screen and (max-width: $break-tablet) {
+			width: 90%;
+			top: 0;
+			transform: none;
+		}				
 	}
 	&__composer {
 		margin: 20px auto 40px;
@@ -174,6 +228,9 @@
 	background: $primary-color;
 	height: 800px;
 	@include clearfix;	
+	@media screen and (max-width: $break-tablet) {
+		height: auto;
+	}			
 	&__wrapper {
 		width: 70%;
 		height: 50%;
@@ -184,6 +241,13 @@
 			border-top: 1px solid $tertiary-color;		
 			border-bottom: 1px solid $tertiary-color;	
 		}
+		@media screen and (max-width: $break-tablet) {
+			width: 90%;
+			height: auto;
+			padding: 0;
+			margin: 0 auto 20px;
+			border-bottom: 1px solid $tertiary-color;
+		}				
 	}
 	&__info {
 		width: 60%;
@@ -191,6 +255,11 @@
 		margin: 0 5% 0 0;
 		position: relative;
 		float: left;
+		@media screen and (max-width: $break-tablet) {
+			float: none;
+			width: 100%;
+			margin: 0;
+		}
 	}
 	&__image {
 		position: relative;
@@ -199,13 +268,23 @@
 		margin: 0;
 		left: 0px;
 		width: 100%;
-		max-width: 100%;		
+		max-width: 100%;
+		@media screen and (max-width: $break-tablet) {
+			top: 0;
+			transform: none;
+		}						
 	}
 	&__credit {
 		width: 35%;
 		height: 100%;
 		float: left;
 		position: relative;
+		@media screen and (max-width: $break-tablet) {
+			float: none;
+			width: 100%;
+			margin: 0;
+			text-align: center;
+		}		
 	}
 	&__credit-detail {
 		position: relative;
@@ -213,6 +292,11 @@
 		color: $tertiary-color;
 		transform: translateY(-50%);
 		font-size: 21px;
+		@media screen and (max-width: $break-tablet) {
+			top: 0;
+			transform: none;
+			font-size: 18px;
+		}		
 	}
 	&__link {
 		font-size: 28px;
@@ -222,6 +306,9 @@
 		margin: 10px 0;
 		color: $secondary-color;
 		@include link-hover($secondary-color);
+		@media screen and (max-width: $break-tablet) {
+			font-size: 21px;
+		}				
 	}
 }
 .about-animation{
@@ -271,6 +358,10 @@
 		padding: 40px 0 100px;
 		text-align: center;
 		border-bottom: 1px solid $tertiary-color;
+		@media screen and (max-width: $break-tablet) {
+			width: 90%;
+			padding: 40px 10% 20px;
+		}				
 	}
 	&__list-item {
 		display: inline-block;
@@ -280,6 +371,10 @@
 			width: 30%;
 			margin: 0 1%;
 		}
+		@media screen and (max-width: $break-tablet) {
+			width: 60%;
+			margin: 20px auto;
+		}				
 	}
 	&__image {
 		max-width: 100%;
@@ -292,12 +387,18 @@
 		font-size: 28px;
 		padding-top: 50px;
 		color: $tertiary-color;		
+		@media screen and (max-width: $break-tablet) {
+			padding-top: 20px;
+		}				
 	}
 }
 
 .films-hero {
 	height: 400px;
 	@include cover-background('http://bachstarcafe.com/wp-content/uploads/sites/2/2016/03/background.jpg', 'center', 'center', 'fixed');
+	@media screen and (max-width: $break-tablet) {
+		height: 200px;
+	}			
 }
 
 .films-description {
@@ -329,6 +430,10 @@
 		font-size: 21px;
 		line-height: 48px;
 		margin-bottom: 0;
+		@media screen and (max-width: $break-tablet) {
+			font-size: 14px;
+			line-height: 28px;
+		}
 	}
 	&__note {
 		text-align: center;
@@ -344,16 +449,29 @@
 		padding: 40px 0;
 		margin: 0 auto;
 		@include clearfix;
+		@media screen and (max-width: $break-tablet) {
+			width: 90%;
+		}		
 	}
 	&__image-wrapper {
 		width: 30%;
 		margin: 0 0 0 5%;
 		float: left;
+		@media screen and (max-width: $break-tablet) {
+			width: 100%;
+			float: none;
+			margin: 0;
+		}				
 	}
 	&__content-wrapper {
 		width: 65%;
 		float: left;
 		margin-bottom: 150px;
+		@media screen and (max-width: $break-tablet) {
+			width: 100%;
+			margin-bottom: 20px;
+			float: none;
+		}				
 	}
 	&__image {
 		max-width: 100%;
@@ -381,4 +499,7 @@
 		height: 400px;
 		@include cover-background('/wp-content/themes/cafe/img/about_background.jpg', 'center', 'center', 'fixed');
 		// @include cover-background('/wp-content/themes/cafe/img/about_background.jpg', 'center', 'center', 'fixed');
+		@media screen and (max-width: $break-tablet) {
+			height: 200px;
+		}				
 }

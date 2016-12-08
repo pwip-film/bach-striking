@@ -17,12 +17,16 @@ main {
 	&__wrapper {
 		width: 80%;
 		margin: 0 auto;
+		@media screen and (max-width: 800px) {
+			width: 100%;
+		}		
 	}
 	&__logo {
 		width: 150px;
 		float: left;
 		margin: 10px 0;
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: $break-tablet) {
+			width: 120px;
 			margin: 0 auto;
 			padding: 10px 0;
 			float: none;
@@ -35,16 +39,28 @@ main {
 		float: right;
 		margin: 45px auto;
 		@include clearfix;
-		@media screen and (max-width: 800px) {
-			display: none;
+		@media screen and (max-width: $break-tablet) {
+			// display: none;
+			float: none;
+			margin: 10px auto;
 		}
 	}
 	&__nav-list {
 		margin: 0 15px 0 0;
 		float: left;
+		@media screen and (max-width: 800px) {
+			float: none;
+			margin: 0;
+			text-align: center;
+		}		
 	}
 	&__social-list {
 		float: left;
+		@media screen and (max-width: 800px) {
+			text-align: center;
+			float: none;
+			margin-top: 20px;
+		}				
 	}
 	&__nav-item {
 		float: left;
@@ -64,6 +80,13 @@ main {
 				color: $secondary-color;
 			}			
 		}		
+		@media screen and (max-width: 800px) {
+			display: inline-block;
+			float: none;
+			margin: 0 5px;
+			font-size: 10px;
+			padding: 2px;
+		}		
 	}
 	&__social-list-item {
 		float: left;
@@ -80,6 +103,12 @@ main {
 				color: $secondary-color;
 			}			
 		}		
+		@media screen and (max-width: 800px) {
+			display: inline-block;
+			float: none;
+			margin: 0 5px;
+			padding: 2px;
+		}				
 	}	
 
 }
@@ -100,7 +129,7 @@ main {
 		img {
 			max-width: 100%;
 		}
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: $break-tablet) {
 			display: none;
 		}		
 	}
@@ -111,7 +140,7 @@ main {
 		padding: 50px 0;
 		text-align: center;
 		color: $primary-color;
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: $break-tablet) {
 			float: none;
 		}		
 	}
