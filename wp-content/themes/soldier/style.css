@@ -621,7 +621,8 @@ main {
       font-size: 8px;
       display: inline-block;
       text-transform: uppercase;
-      font-weight: bold; } }
+      font-weight: bold;
+      padding: 4px; } }
 
 .header__social-list-item {
   float: left;
