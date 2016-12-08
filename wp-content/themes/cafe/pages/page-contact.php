@@ -1,4 +1,4 @@
-<?php /* Template Name: Films */?>
+<?php /* Template Name: Contact */?>
 <?php get_header(); ?>
 
 	<main role="main">

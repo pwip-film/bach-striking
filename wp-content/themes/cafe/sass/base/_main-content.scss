@@ -276,8 +276,9 @@
 	.ginput_container {
 		span {
 			float: left;
-			width: 45%;
+			width: 45% !important;
 			margin-left: 5%;
+			padding: 0 !important;
 			&:first-child {
 				margin-left: 0;
 				margin-right: 5%;
