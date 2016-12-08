@@ -2905,6 +2905,7 @@ main {
 
 .gform_body .ginput_container textarea {
   width: 100%;
+  background: rgba(255, 255, 255, 0.3);
   border: 1px solid #d59f0f;
   padding: 10px;
   color: #999;
