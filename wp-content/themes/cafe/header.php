@@ -49,10 +49,10 @@
 								<li class="header__nav-item page_item page-item-2"><a href="/contact">Contact</a></li>
 							</ul>
 							<ul class="header__social-list">
-								<li class="header__social-list-item"><a class="header__social-link fa fa-facebook" href="http://facebook.com/"></a></li>
-								<li class="header__social-list-item"><a class="header__social-link fa fa-twitter" href="http://twitter.com/"></a></li>
-								<li class="header__social-list-item"><a class="header__social-link fa fa-vimeo" href="http://vimeo.com/"></a></li>
-								<li class="header__social-list-item"><a class="header__social-link fa fa-instagram" href="http://instagram.com/"></a></li>
+								<li class="header__social-list-item"><a class="header__social-link fa fa-facebook" href="https://www.facebook.com/suerockefeller/"></a></li>
+								<li class="header__social-list-item"><a class="header__social-link fa fa-twitter" href="https://twitter.com/suerockefeller"></a></li>
+								<li class="header__social-list-item"><a class="header__social-link fa fa-vimeo" href="https://vimeo.com/148395392"></a></li>
+								<li class="header__social-list-item"><a class="header__social-link fa fa-instagram" href="https://www.instagram.com/susanrockefeller/"></a></li>
 							</ul>
 						</div>
 					</nav>

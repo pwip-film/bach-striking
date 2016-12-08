@@ -66,6 +66,15 @@ main {
 		a {
 			color: $tertiary-color;
 			text-decoration: none;
+			-webkit-transition: color 0.3s ease-out;
+			-moz-transition: color 0.3s ease-out;
+			-o-transition: color 0.3s ease-out;
+			transition: color 0.3s ease-out;			
+		}
+		&:hover {
+			a {
+				color: $secondary-color;
+			}
 		}
 		@media screen and (max-width: $break-tablet) {
 			float: none;

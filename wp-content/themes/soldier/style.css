@@ -2592,7 +2592,13 @@ main {
   text-decoration: none; }
   .header__nav-item a {
     color: #7a6f00;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out; }
+  .header__nav-item:hover a {
+    color: #d59f0f; }
   @media screen and (max-width: 980px) {
     .header__nav-item {
       float: none;
