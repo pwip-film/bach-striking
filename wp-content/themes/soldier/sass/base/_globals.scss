@@ -1,0 +1,103 @@
+body {
+	background: #FFF;
+}
+
+header {
+	background: #FFF;
+	border-top: 5px solid $tertiary-color;
+	position: relative;
+	z-index: 20;
+}
+main {
+	position: relative;
+}
+
+.header {
+	@include clearfix;
+	&__wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__logo {
+		width: 250px;
+		float: left;
+		margin: 10px 0;
+	}
+	&__logo-img {
+		max-width: 100%;
+	}
+	&__nav {
+		float: right;
+		margin: 25px auto;
+		@include clearfix;
+	}
+	&__nav-list {
+		margin: 0 15px 0 0;
+		float: left;
+	}
+	&__social-list {
+		float: left;
+		padding-top: 4px;
+	}
+	&__nav-item {
+		float: left;
+		margin: 0 5px;
+		padding: 10px;
+		text-decoration: none; 
+		a {
+			color: $tertiary-color;
+			text-decoration: none;
+		}		
+	}
+	&__social-list-item {
+		float: left;
+		margin: 0 5px;
+		padding: 7px 0 0;
+		text-decoration: none;
+		width: 30px;
+		text-align: center;
+		height: 30px;
+		border-radius: 50%;
+		color: #FFF;
+		a {
+			color: #FFF;
+			text-decoration: none;
+		}
+		&:first-child {
+			background: $tertiary-color;
+		}
+		&:nth-child(2) {
+			background: #d59f0f;
+		}
+		&:nth-child(3) {
+			background: #000;
+		}
+	}	
+
+}
+
+.footer {
+	background: $tertiary-color;
+	position: relative;
+	z-index: 10;
+	&__wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__image {
+		width: 150px;
+		position: absolute;
+		top: -170px;
+		img {
+			max-width: 100%;
+		}
+	}
+	&__copyright {
+		font-size: 12px;
+		margin: 0 auto;
+		padding: 20px 0;
+		text-align: center;
+		color: #FFF;
+	}
+}
+

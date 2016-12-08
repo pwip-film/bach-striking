@@ -1,0 +1,384 @@
+.about-subheader, .films-subheader, .screening-subheader, .contact-subheader {
+	background: rgba($tertiary-color, 0.6);
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+	&__wrapper {
+		width: 80%;
+		margin: 0 auto;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 24px;
+		padding: 150px 0;
+		text-align: center;
+		letter-spacing: 6px;		
+		h1 {
+			opacity: 0;
+			transition: all 0.5s ease-out;
+			-webkit-transition: all 0.5s ease-out;
+			-moz-transition: all 0.5s ease-out;
+		}
+		&.active {
+			h1 {
+				opacity: 1;
+			}
+		}
+	}
+}
+.about-hero {
+		height: 400px;
+		@include cover-background('http://bachstarcafe.com/wp-content/uploads/sites/2/2016/03/stanza_aboutpage.jpg', 'center', 'center', 'fixed');
+		// @include cover-background('/wp-content/themes/cafe/img/about_background.jpg', 'center', 'center', 'fixed');
+}
+.about-description {
+		background: $primary-color;
+		position: relative;
+		height: 400px;
+		@include clearfix;
+		&:before {
+			background: transparent; /* For browsers that do not support gradients */
+			background: -webkit-linear-gradient(transparent, $primary-color); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(transparent, $primary-color); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(transparent, $primary-color); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(transparent, $primary-color); /* Standard syntax */		
+			content: "";
+			display: block;
+			width: 100%;
+			height: 200px;
+			position: absolute;
+			left: 0;
+			top: -200px;
+		}		
+		&__wrapper {
+			width: 70%;
+			margin: 0 auto;
+			padding: 20px 0;
+			@include clearfix;
+		}		
+		&__text-wrapper {
+			width: 70%;
+			margin: 0 5% 0 0;
+			float: left;
+		}
+		&__text {
+			color: $tertiary-color;
+			padding: 50px 0 0;
+			font-size: 21px;
+			line-height: 32px;
+			margin: 0;			
+		}
+		&__image-wrapper {
+			width: 25%;
+			float: left;
+		}
+		&__image {
+			max-width: 70%;
+			margin: 0 auto;
+			display: block;
+			padding-top: 15px;
+		}
+		&__emphasize {
+			font-weight: bold;
+			font-style: italic;
+		}
+}
+.about-profile {
+	background: $primary-color;
+	iframe {
+		max-width: 100%;
+	}
+	&__wrapper {
+		width: 70%;
+		margin: 0 auto;
+		padding: 50px 0;
+		@include clearfix;
+	}
+	&__image-wrapper {
+		width: 30%;
+		margin: 0 5% 0 0;
+		float: left;
+	}
+	&__image {
+		max-width: 100%;
+	}
+	&__content-wrapper {
+		width: 65%;
+		float: left;
+	}
+	&__content-title {
+		margin-bottom: 10px;
+		color: $tertiary-color;
+	}
+	&__content-sub-title {
+		margin-bottom: 30px;
+		color: $tertiary-color;
+	}	
+	&__content-text {
+		font-size: 18px;
+		line-height: 24px;
+		color: $tertiary-color;
+		a {		
+			color: $tertiary-color;
+			@include link-hover($tertiary-color);
+		}
+	}
+}
+.about-info {
+	height: 540px;
+	padding: 50px 0;
+	clear: both;
+	color: #FFF;
+	background: $primary-color;
+	// @include cover-background('http://bachstarcafe.com/wp-content/uploads/sites/2/2016/03/stanza_aboutpage.jpg', 'center', 'center', 'fixed');		
+	&__title {
+		font-size: 42px;
+	}
+	&__sub-title {
+		margin: 20px 0 0;
+	}
+	&__wrapper {
+		background: $tertiary-color;
+		width: 70%;
+		margin: 0 auto;
+		padding: 40px 0;
+		text-align: center;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__composer {
+		margin: 20px auto 40px;
+		width: 100%;
+	}
+	&__composer-detail {
+		display: block;
+		margin: 0 0 15px;
+		font-size: 14px;
+	}
+	&__list {
+		list-style: none;
+		width: 80%;
+		margin: 20px auto 0;
+	}
+	&__list-item {
+		display: inline-block;
+		margin: 0 10px 15px;
+		font-size: 14px;
+	}
+	&__thanks {
+		margin: 20px 0 0;
+	}
+}
+.about-artwork{
+	background: $primary-color;
+	height: 800px;
+	@include clearfix;	
+	&__wrapper {
+		width: 70%;
+		height: 50%;
+		padding: 40px 0;
+		margin: 0 auto;
+		@include clearfix;	
+		&--animation {
+			border-top: 1px solid $tertiary-color;		
+			border-bottom: 1px solid $tertiary-color;	
+		}
+	}
+	&__info {
+		width: 60%;
+		height: 100%;
+		margin: 0 5% 0 0;
+		position: relative;
+		float: left;
+	}
+	&__image {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0;
+		left: 0px;
+		width: 100%;
+		max-width: 100%;		
+	}
+	&__credit {
+		width: 35%;
+		height: 100%;
+		float: left;
+		position: relative;
+	}
+	&__credit-detail {
+		position: relative;
+		top: 50%;
+		color: $tertiary-color;
+		transform: translateY(-50%);
+		font-size: 21px;
+	}
+	&__link {
+		font-size: 28px;
+		font-weight: bold;
+		text-decoration: none;
+		display: block;
+		margin: 10px 0;
+		color: $secondary-color;
+		@include link-hover($secondary-color);
+	}
+}
+.about-animation{
+	background: $primary-color;
+	height: 400px;
+	@include clearfix;	
+	&__wrapper {
+		width: 70%;
+		height: 100%;
+		padding: 40px 0;
+		margin: 0 auto;
+		@include clearfix;	
+	}
+	&__info {
+		width: 60%;
+		height: 100%;
+		margin: 0 5% 0 0;
+		position: relative;
+		float: left;
+	}
+	&__image {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0;
+		left: 0px;		
+	}
+	&__credit {
+		width: 35%;
+		height: 100%;
+		float: left;
+		position: relative;
+	}
+	&__credit-detail {
+		position: relative;
+		color: $tertiary-color;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.about-credits {
+	background: $primary-color;	
+	clear: both;
+	&__list {
+		width: 70%;
+		margin: 0 auto;
+		padding: 40px 0 100px;
+		text-align: center;
+		border-bottom: 1px solid $tertiary-color;
+	}
+	&__list-item {
+		display: inline-block;
+		width: 14%;
+		margin: 0 1%;
+		&--large {
+			width: 30%;
+			margin: 0 1%;
+		}
+	}
+	&__image {
+		max-width: 100%;
+		margin: 0 10px;
+	}
+	&__sub-title {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 28px;
+		padding-top: 50px;
+		color: $tertiary-color;		
+	}
+}
+
+.films-hero {
+	height: 400px;
+	@include cover-background('http://bachstarcafe.com/wp-content/uploads/sites/2/2016/03/background.jpg', 'center', 'center', 'fixed');
+}
+
+.films-description {
+	background: #FFF;
+	position: relative;
+	@include clearfix;
+	&:before {
+		background: transparent; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(transparent, #FFF); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(transparent, #FFF); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(transparent, #FFF); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(transparent, #FFF); /* Standard syntax */		
+		content: "";
+		display: block;
+		width: 100%;
+		height: 200px;
+		position: absolute;
+		left: 0;
+		top: -200px;
+	}		
+	&__wrapper {
+		width: 70%;
+		margin: 0 auto;
+		padding: 40px 0 0;
+		@include clearfix;
+	}
+	&__text {
+		text-align: center;
+		font-size: 21px;
+		line-height: 48px;
+		margin-bottom: 0;
+	}
+	&__note {
+		text-align: center;
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+
+.films-form {
+	&__wrapper {
+		width: 70%;
+		height: 100%;
+		padding: 40px 0;
+		margin: 0 auto;
+		@include clearfix;
+	}
+	&__image-wrapper {
+		width: 30%;
+		margin: 0 0 0 5%;
+		float: left;
+	}
+	&__content-wrapper {
+		width: 65%;
+		float: left;
+		margin-bottom: 150px;
+	}
+	&__image {
+		max-width: 100%;
+		margin: 55px auto 5px;
+		display: block;
+	}	
+}
+.screening-description {
+	background: $primary-color;
+	&__wrapper {
+		@extend .about-description__wrapper;
+	}
+	&__wrapper {
+		min-height: 500px;
+		text-align: center;
+	}
+	&__text {
+		width: 80%;
+		margin: 120px auto 0;
+		font-size: 24px;
+		line-height: 32px;		
+	}	
+}
+.contact-hero {
+		height: 400px;
+		@include cover-background('/wp-content/themes/cafe/img/about_background.jpg', 'center', 'center', 'fixed');
+		// @include cover-background('/wp-content/themes/cafe/img/about_background.jpg', 'center', 'center', 'fixed');
+}

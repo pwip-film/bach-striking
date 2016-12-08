@@ -1,0 +1,119 @@
+body {
+	background: #FFF;
+	border-top: 2px solid $secondary-color;
+}
+
+header {
+	background: #faead2;
+}
+
+
+main {
+	position: relative;
+}
+
+.header {
+	@include clearfix;
+	&__wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__logo {
+		width: 150px;
+		float: left;
+		margin: 10px 0;
+		@media screen and (max-width: 800px) {
+			margin: 0 auto;
+			padding: 10px 0;
+			float: none;
+		}
+	}
+	&__logo-img {
+		max-width: 100%;
+	}
+	&__nav {
+		float: right;
+		margin: 45px auto;
+		@include clearfix;
+		@media screen and (max-width: 800px) {
+			display: none;
+		}
+	}
+	&__nav-list {
+		margin: 0 15px 0 0;
+		float: left;
+	}
+	&__social-list {
+		float: left;
+	}
+	&__nav-item {
+		float: left;
+		margin: 0 5px;
+		padding: 10px;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 2px;
+		text-decoration: none; 
+		a {
+			color: $tertiary-color;
+			text-decoration: none;
+			transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;				
+			&:hover {
+				color: $secondary-color;
+			}			
+		}		
+	}
+	&__social-list-item {
+		float: left;
+		margin: 0 5px;
+		padding: 10px;
+		text-decoration: none; 
+		a {
+			color: $tertiary-color;
+			text-decoration: none;
+			transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;	
+			&:hover {
+				color: $secondary-color;
+			}			
+		}		
+	}	
+
+}
+
+.footer {
+	background: #4b2a13;
+	height: 120px;
+	position: relative;
+	z-index: 10;
+	&__wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__image {
+		width: 150px;
+		position: absolute;
+		top: -170px;
+		img {
+			max-width: 100%;
+		}
+		@media screen and (max-width: 800px) {
+			display: none;
+		}		
+	}
+	&__copyright {
+		float: right;
+		font-size: 12px;
+		margin: 0 auto;
+		padding: 50px 0;
+		text-align: center;
+		color: $primary-color;
+		@media screen and (max-width: 800px) {
+			float: none;
+		}		
+	}
+}
+

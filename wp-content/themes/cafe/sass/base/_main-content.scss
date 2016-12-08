@@ -1,0 +1,314 @@
+.main-video {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	@include cover-background('http://bachstarcafe.com/wp-content/uploads/sites/2/2016/03/sliderbach.jpg', 'center', 'center', 'fixed');
+	&__quote-wrapper {
+		width: 60%;
+		margin: 0 auto;
+		z-index: 10;
+		position: relative;
+		top: 50px;
+		@media screen and (max-width: 800px) {
+			width: 96%;
+			top: 120px;
+		}		
+	}
+	&__top-quote {
+		opacity: 0;
+		transition: all 1s ease-out;
+		-webkit-transition: all 1s ease-out;
+		-moz-transition: all 1s ease-out;
+		&--visible {
+			opacity: 1;
+		}		
+	}
+	&__bottom-quote {
+		opacity: 0;
+		transition: all 1s ease-out;
+		-webkit-transition: all 1s ease-out;
+		-moz-transition: all 1s ease-out;
+		&--visible {
+			opacity: 1;
+		}		
+	}	
+	&__play-wrapper {
+		width: 430px;
+		max-width: 100%;
+		text-align: center;
+		margin: 80px auto;
+		cursor: pointer;
+		position: relative;
+		opacity: 0;
+		transition: all 0.5s ease-out;
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;		
+		@include clearfix();
+		&:hover {
+			.main-video__play-button {
+				border-left: (50px*1.2) solid #FFF;	
+				&:before {
+					border-color: #FFF;
+					box-shadow: 0 0 0 4px $secondary-color;	
+					transform: scale(1.1);
+					-webkit-transform: scale(1.1);
+					-moz-transform: scale(1.1);				
+				}
+			}
+			.main-video__play-button-bg {
+				background: $secondary-color;				
+			}
+			.main-video__play-text {
+				color: #FFF;
+				text-shadow: -2px -2px 0 $secondary-color, 2px -2px 0 $secondary-color, -2px 2px 0 $secondary-color, 2px 2px 0 $secondary-color;
+			}
+		}
+		&--visible {
+			opacity: 1;
+		}
+	}
+	&__play-button {
+		display:block;
+		width: 0; 
+		height: 0; 
+		border-top: 50px solid transparent;
+		border-bottom: 50px solid transparent;
+		border-left: (50px*1.2) solid $tertiary-color;
+		position:relative;
+		z-index:1;
+		transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		cursor: pointer;
+		left:(50px*0.2); 
+		float: left;
+		transform: scale(.5);		 
+		&:before {
+			content:'';
+			position:absolute;
+
+			top:(50px*-1.5);
+			left:(50px*-2.3);
+			bottom:(50px*-1.5);
+			right:(50px*-0.7);
+			border-radius:50%;
+			border: (50px*0.2) solid $tertiary-color;
+			z-index:2;
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+		}
+		&:after {
+			content:'';
+			opacity:0;
+			transition: opacity (0.3s * 2);
+			-webkit-transition: opacity (0.3s * 2);
+			-moz-transition: opacity (0.3s * 2);
+		}
+
+		&:hover, &:focus {
+
+		}
+
+		&--active {
+			border-color:transparent;
+			&:after {
+				content:'';
+				opacity:1;
+				width:(50px);
+				height:(50px*1.6);
+				background:$tertiary-color;
+				position:absolute;
+				right: (50px*0.1);
+				top: (50px*-0.8);
+				border-left:(50px*0.4) solid $tertiary-color;
+				box-shadow:inset (50px*0.6) 0 0 0 #f9f9f9;
+			}
+		}
+		@media screen and (max-width: 800px) {
+			float: none;
+			margin: 0 auto;
+		}
+	}
+	&__play-button-bg {
+		width: 72px;
+		height: 72px;
+		position: absolute;
+		top: 13px;
+		border-radius: 50%;	
+		transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;	
+		@media screen and (max-width: 800px) {
+			display: none;
+		}		
+	}
+	&__play-text {
+		color: $tertiary-color;
+		font-weight: bold;
+		font-size: 34px;
+		display: inline-block;
+		margin: 34px auto 50px auto;
+		padding-left: 40px;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		float: left;
+		transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		@media screen and (max-width: 800px) {
+			float: none;
+			margin: 10px auto 0;
+			padding: 0;
+			font-size: 18px;
+		}		
+	}
+	&__top-quote {
+
+	}
+	&__bottom-quote {
+
+	}
+	&__quote-image {
+		display: block;
+		margin: 0 auto;
+		&--top{
+			max-width: 100%;
+		}
+		&--bottom {
+			max-width: 70%;
+		}
+	}
+	&__video-wrapper {
+		width: 80%;
+		margin: 0 auto;
+		padding: 20px 0;
+		display: none;
+		position: relative;
+		z-index: 10;
+	}
+	&__iframe {
+		// display: none;
+		border: none;
+		margin: 20px auto;
+		max-width: 100%;
+	}
+	&__transparency {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.3);
+		top: 0;	
+		z-index: 5;
+		transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;		
+		&--video {
+			background: $tertiary-color;
+		}	
+	}
+}
+
+.main-content {
+	background: #faead2;
+	position: relative;
+	// padding-top: 50px;
+	padding-bottom: 50px;
+	z-index: 8;
+	&:before {
+		background: transparent; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(transparent, #faead2); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(transparent, #faead2); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(transparent, #faead2); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(transparent, #faead2); /* Standard syntax */		
+		content: "";
+		display: block;
+		width: 100%;
+		height: 400px;
+		position: absolute;
+		left: 0;
+		top: -400px;
+	}
+	&__wrapper {
+		width: 60%;
+		padding: 50px 0;
+		margin: 0 auto;
+		@media screen and (max-width: 800px) {
+			width: 84%;
+			margin: 0 auto;
+		}		
+	}
+	&__text {
+		font-size: 21px;
+		line-height: 32px;
+		color: $tertiary-color;
+		margin-bottom: 30px;
+		font-weight: lighter;				
+	}
+	&__image {
+		max-width: 120%;
+		margin: 0 -10% 35px;
+		@media screen and (max-width: 800px) {
+			max-width: 100%;
+			margin: 0 0 35px;
+		}		
+	}
+	&__emphasize {
+		font-weight: bold;
+		font-style: italic;
+	}
+}
+
+.gform_body {
+	.gfield {
+		margin: 0;
+		list-style: none;
+		@include clearfix();
+	}
+	.gfield_label {
+		margin: 30px 0 10px;
+		display: block;
+		clear: both;
+		font-size: 14px;
+		font-weight: bold;
+		color: $tertiary-color;		
+	}
+	.ginput_container {
+		span {
+			float: left;
+			width: 45%;
+			margin-left: 5%;
+			&:first-child {
+				margin-left: 0;
+				margin-right: 5%;
+			}
+		}
+		input {
+			width: 100%;
+			border: 1px solid $secondary-color;
+			padding: 10px;
+			color: #999;
+			font-size: 12px;				
+		}
+		label {
+			font-size: 10px;
+			color: $tertiary-color;
+			opacity: .7;
+			padding: 10px 0;				
+		}
+	}
+}
+.gform_button {
+	width: 100%;
+	padding: 20px;
+	box-shadow: none;
+	margin: 30px 0;
+	border: none;
+	background: $secondary-color;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2px;
+	border-radius: 3px;		
+}
