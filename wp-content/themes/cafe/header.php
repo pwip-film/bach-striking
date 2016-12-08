@@ -43,10 +43,10 @@
 					<nav class="header__nav">
 						<div class="header__nav-menu">
 							<ul class="header__nav-list">
-								<li class="header__nav-item page_item page-item-2"><a href="http://127.0.0.1:8094/about">About</a></li>
-								<li class="header__nav-item page_item page-item-2"><a href="http://127.0.0.1:8094/see-the-film">See The Film</a></li>
-								<li class="header__nav-item page_item page-item-2"><a href="http://127.0.0.1:8094/screening-kit">Screening Kit</a></li>
-								<li class="header__nav-item page_item page-item-2"><a href="http://127.0.0.1:8094/contact">Contact</a></li>
+								<li class="header__nav-item page_item page-item-2"><a href="/about">About</a></li>
+								<li class="header__nav-item page_item page-item-2"><a href="/see-the-film">See The Film</a></li>
+								<li class="header__nav-item page_item page-item-2"><a href="/screening-kit">Screening Kit</a></li>
+								<li class="header__nav-item page_item page-item-2"><a href="/contact">Contact</a></li>
 							</ul>
 							<ul class="header__social-list">
 								<li class="header__social-list-item"><a class="header__social-link fa fa-facebook" href="http://facebook.com/"></a></li>
