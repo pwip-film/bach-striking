@@ -135,10 +135,10 @@
 					<h3 class="about-profile__content-sub-title">Director and Co-Producer</h3>
 					
 					<p class="about-profile__content-text">	
-						Susan Rockefeller is the Founder and CEO of Protect What is Precious a company that uses the power of documentary filmmaking, photography storytelling and design to inspire awareness and mobilize action across a wide range of environmental, social and philanthropic groups. Susan’s films have explored a range of contemporary issues, often using both real life heroes and those of myths to confront issues such as ocean acidification and the future of ocean health, PTSD and the use of music to heal, the confluence of race, poverty and illness, global food sustainability. Her films, including titles such as Food For Thought, Food For Life, Striking a Chord, Making the Crooked Straight, Running Madness, Take Time, and Mission of Mermaids have aired on HBO, PBS, and the Discovery Channel.</p> 
+						Susan Rockefeller is an award-winning documentary filmmaker, artist, and conservationist. Her latest endeavor, Musings is a digital magazine that curates ideas and innovations that pave the way for a more sustainable future. As the Founder and Editor-in-Chief of Musings, Susan offers a portal to vetted products and brands that are pioneers in health, environmental, and social consciousness. A longstanding philanthropist, Susan sits on the boards of Oceana, Stone Barns Center for Food and Agriculture, We are Family Foundation, Unleashed, Southampton Arts Center, and Land and Garden Preserve. She is a member of the Council of Foreign Relations and is additionally an advisor to Food Systems 6, MADE SAFE, Oceanic Global, and Ohana & Co. In her film work, Susan is a Principal of Louverture films and a member of the Film Committee for the Museum of Modern Art. Her own original films including: Bach Star Café, Food For Thought, Food for Life, Striking a Chord, Making the Crooked Straight, and Mission of Mermaids, have aired on HBO, PBS, and the Discovery Channel.</p> 
 
 					<p class="about-profile__content-text">	
-						For more information: <a href="www.protectwhatisprecious.com">www.protectwhatisprecious.com</a>
+						For more information: <a href="www.susanrockefeller.com">www.susanrockefeller.com</a>
 					</p>
 				</div>				
 			</div>

@@ -12,7 +12,7 @@
 
 		<section class="films-description">
 			<div class="films-description__wrapper">
-				<p class="films-description__text">Bach Star Café will release in Fall 2016.<br>
+				<p class="films-description__text">Bach Star Café will release in Fall 2018.<br>
 				Please fill out the form below to be notified of the release and upcoming screening opportunities.</p>
 			</div>
 		</section>

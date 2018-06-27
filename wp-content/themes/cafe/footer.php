@@ -6,7 +6,7 @@
 					</div>
 					<!-- copyright -->
 					<p class="footer__copyright">
-						&copy; <?php echo date('Y'); ?> Copyright ©2016 | Protect What is Precious
+						&copy; <?php echo date('Y'); ?> Copyright ©2018 | Protect What is Precious
 					</p>
 					<!-- /copyright -->					
 				</div>
